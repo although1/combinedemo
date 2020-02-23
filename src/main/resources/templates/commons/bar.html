@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--顶部状态栏-->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm" th:fragment="navbar">
+    <a class="my-0 mr-md-auto font-weight-normal" >[[${session.loginUser}]]</a>
+
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="https://v4.bootcss.com/docs/examples/pricing/#">Features</a>
+        <a class="p-2 text-dark" href="https://v4.bootcss.com/docs/examples/pricing/#">Enterprise</a>
+        <a class="p-2 text-dark" href="https://v4.bootcss.com/docs/examples/pricing/#">Support</a>
+        <a class="p-2 text-dark" href="https://v4.bootcss.com/docs/examples/pricing/#">Pricing</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="https://v4.bootcss.com/docs/examples/pricing/#">登出</a>
+</div>
+</body>
+</html>
